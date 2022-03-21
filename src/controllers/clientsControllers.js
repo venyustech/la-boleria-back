@@ -40,12 +40,3 @@ export async function getClientOrders(req, res) {
     }
 
 }
-const i = [
-    {
-        "orderId": 1,
-        "quantity": 2,
-        "createdAt": "2022-03-16 10:30",
-        "totalPrice": 26.00,
-        "cakeName": "Bolo de pote"
-    }
-]

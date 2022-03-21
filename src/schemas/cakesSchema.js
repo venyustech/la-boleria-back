@@ -8,7 +8,7 @@ export const cakesSchema = joi.object({
 });
 
 
-export const uriSchema = joi.object({
+export const uriCakeSchema = joi.object({
     name: joi.string().allow(""),
     price: joi.number().allow(""),
     description: joi.string().allow(""),
