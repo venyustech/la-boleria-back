@@ -2,7 +2,7 @@ CREATE TABLE clients
 (
     id serial NOT NULL PRIMARY KEY,
     name varchar NOT NULL,
-    adress varchar NOT NULL,
+    address varchar NOT NULL,
     phone varchar NOT NULL UNIQUE,
 )
 
