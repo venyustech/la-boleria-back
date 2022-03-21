@@ -107,7 +107,8 @@ function mapOrdersArrayToObject(row) {
 export async function getOrderById(req, res) {
     const { id } = req.params;
 
-    if (isNaN(parseInt(id))) return res.status(400);
+    if (!(/^(\-|\+)?([0-9]+|Infinity)$/.test(id)))
+        return res.sendStatus(400);
     try {
         const result = await db.query({
             text: `
